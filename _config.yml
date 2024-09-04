@@ -1,7 +1,7 @@
 # Site settings
 title: Help With My Site
 email: russellbeaman@gmail.com
-description: Empowering Your Online Presence: Tailored Web Design & SEO Solutions in Raleigh, NC> # this means to ignore newlines until "baseurl:"
+description: Tailored Web Design & SEO Solutions in Raleigh, NC> # this means to ignore newlines until "baseurl:"
 baseurl: "/helpwithmysite/" # the subpath of your site, e.g. /blog/
 url: "https://rustisaurusrex.github.io" # the base hostname & protocol for your site
 
