@@ -1,0 +1,91 @@
+<!-- modify this form HTML and place wherever you want your form -->
+<form
+action="https://formspree.io/f/xovajyyy"
+method="POST"
+>
+<div class="innerform">
+<h4>Contact Us</h4>
+<label class="formlabel">
+  Name:
+  <input type="name" name="name">
+</label>
+<label class="formlabel">
+  Email:
+  <input type="email" name="email">
+</label>
+<label class="formlabel">
+  Interested In:
+  <div class ="checkbox">
+    <div>
+  <input type="checkbox" id="seo" name="Interested In" value="SEO">
+    <label for="seo"> SEO</label>
+    </div>
+    <div>
+  <input type="checkbox" id="website" name="Interested In" value="Web Design">
+    <label for="website"> Web Design</label>
+    </div>
+      <div>
+  <input type="checkbox" id="unsure" name="Interested In" value="Unsure">
+    <label for="unsure"> I'm not sure</label>
+      </div>
+      </div>
+              </label>
+
+<label class="formlabel">
+  How can we help you?
+  <textarea name="message"></textarea>
+</label>
+<!-- your other form fields go here -->
+<button type="submit">Submit</button>
+</div>
+</form>
+<!-- Read the Formbutton docs at formspree.io/formbutton/docs. See more examples at codepen.io/formspree -->
+<script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+<script>
+
+    
+  /* paste this line in verbatim */
+  window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+  /* customize formbutton below*/     
+  formbutton("create", {
+    action: "https://formspree.io/f/xovajyyy",
+    title: "How can we help?",
+    fields: [
+    { 
+        type: "name", 
+        label: "Name:", 
+        name: "name",
+        required: true,
+        placeholder: "John Smith"
+      },
+      { 
+        type: "email", 
+        label: "Email:", 
+        name: "email",
+        required: true,
+        placeholder: "your@email.com"
+      },
+      {
+        type: "checkbox",
+        label: "Interested in:",
+        name: "interest",
+        placeholder: "",
+      },
+      {
+        type: "textarea",
+        label: "Message:",
+        name: "message",
+        placeholder: "What's on your mind?",
+      },
+      { type: "submit" }      
+    ],
+    styles: {
+      title: {
+        backgroundColor: "gray"
+      },
+      button: {
+        backgroundColor: "gray"
+      }
+    }
+  });
+</script>
